@@ -44,6 +44,7 @@ az vm create `
     --data-disk-sizes-gb 10 `
     --admin-username azuser `
     --ssh-key-value ~/.ssh/id_rsa.pub `
+    --public-ip-sku standard `
     --public-ip-address-dns-name kubeadm-ckad-master
 
 # Create the two worker nodes
@@ -57,6 +58,7 @@ az vm create `
     --data-disk-sizes-gb 10 `
     --admin-username azuser `
     --ssh-key-value ~/.ssh/id_rsa.pub `
+    --public-ip-sku standard `
     --public-ip-address-dns-name kubeadm-ckad-worker-1
 
 Write-Host "Creating worker node 2 Virtual machine"
@@ -69,6 +71,7 @@ az vm create `
     --data-disk-sizes-gb 10 `
     --admin-username azuser `
     --ssh-key-value ~/.ssh/id_rsa.pub `
+    --public-ip-sku standard `
     --public-ip-address-dns-name kubeadm-ckad-worker-2
 
 Write-Host "Successfully created VMs"
