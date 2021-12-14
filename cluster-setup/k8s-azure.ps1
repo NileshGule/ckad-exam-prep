@@ -71,3 +71,4 @@ az vm create `
     --ssh-key-value ~/.ssh/id_rsa.pub `
     --public-ip-address-dns-name kubeadm-ckad-worker-2
 
+Write-Host "Successfully created VMs"
