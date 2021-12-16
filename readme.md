@@ -6,6 +6,10 @@ This repo contains the different resources related CKAD exam preparation.
 
 This folder contains the scripts and readme file for setting up the Kubernetes [cluster setup](cluster-setup)
 
+## Kubernetes Architecture
+
+The [k8s-architecture](2-k8s-architecture) folder contains YAML manifest files to test basic pod, service and multi container pods.
+
 ---
 
 ## Youtube video
