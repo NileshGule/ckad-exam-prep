@@ -40,4 +40,4 @@ sudo tail /var/lib/docker/overlay2/bb6209ea4fe436d1783dca67c7a707faadc42a8defdce
 
 ```
 
-_Note: the container hash will be different 
+_Note_: the container hash will be different 
