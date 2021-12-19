@@ -25,7 +25,7 @@ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 
 # Install Kubeadm
-sudo apt install kubeadm=1.22.0-00 -y
+sudo apt install kubeadm=1.22.0-00 kubectl=1.22.0-00 kubelet=1.22.0-00 -y
 
 ```
 ### Configure Docker daemon to use systemd
