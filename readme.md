@@ -28,3 +28,7 @@ The [k8s-architecture](2-k8s-architecture) folder contains YAML manifest files t
 - [Blogger - How to bootstrap multi node Kubernetes cluster using Kubeadm](https://www.handsonarchitect.com/2021/12/how-to-bootstrap-multi-node-kubernetes.html)
 
 - [Medium - How to bootstrap multi node Kubernetes cluster using Kubeadm](https://nileshgule.medium.com/how-to-bootstrap-multi-node-kubernetes-cluster-on-azure-using-kubeadm-211726acaf3a)
+
+- [Blogger - How to install Metrics Server on Kubernetes cluster](https://www.handsonarchitect.com/2021/12/how-to-install-metrics-server-on.html)
+
+- [Medium - How to install Metrics Server on Kubernetes cluster](https://nileshgule.medium.com/how-to-install-metrics-server-on-kubernetes-cluster-60dd754873c2)
