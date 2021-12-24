@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: secondapp
+spec:
+  selector:
+    example: second
+  ports:
+  - port: 80
+    protocol: TCP
+  sessionAffinity: None
+status:
+  loadBalancer: {}
