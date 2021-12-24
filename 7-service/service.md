@@ -89,3 +89,80 @@ az vm open-port `
 kubectl -n multitenant get deploy mainapp -o yaml | \linkerd inject - | kubectl apply -f -
 
 ```
+
+### Scale up the deployment
+
+```bash
+
+k -n multitenant scale deploy mainapp --replicas=5
+
+```
+
+## Install `Helm`
+
+```bash
+
+curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
+sudo apt-get install apt-transport-https --yes
+echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+sudo apt-get update
+sudo apt-get install helm
+
+```
+
+## Setup Nginx ingress
+
+### Setup Nginx ingress controller using helm
+
+```bash
+
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+
+helm repo update
+
+helm fetch ingress-nginx/ingress-nginx --untar
+
+vi ingress-nginx/values.yaml #change to DaemonDet from existing Deployment
+
+helm install myingress ingress-nginx
+
+```
+
+## Create Ingress
+
+```bash
+
+k create -f ingress.yaml
+
+```
+
+### Add linkerd annotation to the ingress pods
+
+```bash
+
+kubectl get ds myingress-ingress-nginx-controller -o yaml  | \linkerd inject --ingress - | kubectl apply -f  -
+
+```
+
+## Add third nginx webserver
+
+```bash
+
+k create deploy thirdpage --image=nginx
+
+k label pod thirdpage-<tab> example=third
+
+k expose deploy thirdpage --port=80 --type=NodePort
+
+k exec -it thirdpage-<tab> -- /bin/bash
+
+# inside container
+
+apt-get update
+
+apt-get install vim -y
+
+vim /usr/share/nginx/html/index.html
+
+# Edit title of HTML page to Third Page
+```
