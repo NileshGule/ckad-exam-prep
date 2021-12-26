@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-canary-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    maxUnavailable: 25%
+    maxSurge: 2
+  template:
+    metadata:
+      labels:
+        app: nginx
+        version: "2.0"
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:alpine
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: /usr/share/nginx/html
+          name: htmlshare
+      volumes:
+      - name: htmlshare
+        hostPath:
+          path: /home/azuser/nginx/v2
