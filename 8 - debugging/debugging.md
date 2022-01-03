@@ -4,9 +4,9 @@
 
 ```bash
 
-k delete nginx --force --grace-priod=0
+k delete nginx --force --grace-period=0
 
-k delete nginx --force --grace-priod=0
+k delete nginx --force --grace-period=0
 
 ```
 
