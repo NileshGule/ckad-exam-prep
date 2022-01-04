@@ -1,6 +1,11 @@
 # CKAD Exam preparation
 
+
 This repo contains the different resources related CKAD exam preparation.
+
+## Certificate
+
+![Nilesh Gule CKAD certificate](/images/ckad-certificate.png)
 
 ## Cluster setup
 
