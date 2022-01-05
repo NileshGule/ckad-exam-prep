@@ -33,6 +33,9 @@ The [k8s-architecture](2-k8s-architecture) folder contains YAML manifest files t
 ---
 
 ## Blogs
+- [Blogger - How to prepare and clear CKAD certification exam](https://www.handsonarchitect.com/2022/01/how-to-prepare-and-clear-ckad.html)
+
+- [Medium - How to prepare and clear CKAD certification exam](https://nileshgule.medium.com/how-to-prepare-and-clear-ckad-certification-exam-4dc87345110a)
 
 - [Blogger - How to bootstrap multi node Kubernetes cluster using Kubeadm](https://www.handsonarchitect.com/2021/12/how-to-bootstrap-multi-node-kubernetes.html)
 
