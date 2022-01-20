@@ -30,6 +30,10 @@ The [k8s-architecture](2-k8s-architecture) folder contains YAML manifest files t
 
 [![Install Metrics Server on multi node Kubernetes cluster](/images/k8s-metrics-server-thumpnail.jpg)](https://youtu.be/0UDG52REs68)
 
+[First Thing to do during Kubernetes exams - setup Bash profile with aliases Youtube video](https://youtu.be/wS-BKnvKFbM)
+
+[![First Thing to do during Kubernetes exams - setup Bash profile with aliases Youtube video](/images/setup-bash-profile-with-aliases.png)](https://youtu.be/wS-BKnvKFbM)
+
 ---
 
 ## Blogs
