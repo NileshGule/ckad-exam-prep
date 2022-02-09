@@ -166,3 +166,13 @@ vim /usr/share/nginx/html/index.html
 
 # Edit title of HTML page to Third Page
 ```
+
+## Imperative commands for service
+
+Creates httpd pod and service using httpd:alpine image 
+
+```bash
+
+k run httpd --image httpd:alpine --ports 80 --expose
+
+```
