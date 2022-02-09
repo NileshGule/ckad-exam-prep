@@ -34,8 +34,7 @@ The [k8s-architecture](2-k8s-architecture) folder contains YAML manifest files t
 
 [![First Thing to do during Kubernetes exams - setup Bash profile with aliases Youtube video](/images/setup-bash-profile-with-aliases.png)](https://youtu.be/wS-BKnvKFbM)
 
-[The expert guide to improve kubectl productivity with imperative commands](https://youtu.be/
-QOv26a-yaq8)
+[The expert guide to improve kubectl productivity with imperative commands](https://youtu.be/QOv26a-yaq8)
 
 [![The expert guide to improve kubectl productivity with imperative commands](/images/kubectl-imperative-commands.png)](https://youtu.be/QOv26a-yaq8)
 
